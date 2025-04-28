@@ -13,11 +13,11 @@ import Layout from "../layouts/Layout.astro";
     </div>
     <button type="submit">Submit</button>
   </form>
+  <template id="ingredient-template">
+    <IngredientsBlock />
+  </template>
 </Layout>
 
-<template id="ingredient-template">
-  <IngredientsBlock />
-</template>
 
 <script>
   import { actions } from "astro:actions";
