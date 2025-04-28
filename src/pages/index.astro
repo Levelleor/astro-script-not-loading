@@ -18,14 +18,3 @@ import Layout from "../layouts/Layout.astro";
 <template id="ingredient-template">
   <IngredientsBlock />
 </template>
-
-<script>
-  import { actions } from "astro:actions";
-
-  const form = document.querySelector("form");
-  form.addEventListener("submit", async (event) => {
-    // event.preventDefault();
-    const formData = new FormData(form);
-    const { error } = await actions.addRecipe(formData);
-  });
-</script>
